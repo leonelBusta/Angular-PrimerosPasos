@@ -7,8 +7,12 @@ import { PadreComponent } from "./padre/padre.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, PadreComponent]
+    imports: [RouterOutlet, PadreComponent
+      
+    ]
 })
+
+
 export class AppComponent {
   title = 'angular-y';
 }

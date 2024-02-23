@@ -1,1 +1,19 @@
-<p>padre works!</p>
+<app-hijo 
+(incrementarDesdeHijo)="incrementar()"
+(decrementarDesdeHijo)="decrementar()"
+(mensajeDesdeHijo)="recibirMensaje($event)">
+</app-hijo>
+
+<h3>El mensaje recibido desde el hijo es: {{mensajeRecibido}}</h3>  
+
+<!--<app-hijo [recibeHijo]="mensajePadre"></app-hijo> -->
+
+
+
+
+<p>Contador!</p>
+<p>{{valorContador}}</p>
+
+
+
+
