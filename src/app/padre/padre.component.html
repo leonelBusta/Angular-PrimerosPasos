@@ -3,17 +3,15 @@
 (decrementarDesdeHijo)="decrementar()"
 (mensajeDesdeHijo)="recibirMensaje($event)">
 </app-hijo>
+<p>Contador:  {{ valorContador}}</p>
 
 <h3>El mensaje recibido desde el hijo es: {{mensajeRecibido}}</h3>  
 
 <!--<app-hijo [recibeHijo]="mensajePadre"></app-hijo> -->
 
-
-
-
-<p>Contador!</p>
-<p>{{valorContador}}</p>
-
-
+<app-hermano/>
+    <h1>{{nombre}}</h1>
+    <button type="button" (click)="saludar()">Saludar</button>
+    <button type="button" (click)="preguntar()">preguntar por hijo</button>
 
 
