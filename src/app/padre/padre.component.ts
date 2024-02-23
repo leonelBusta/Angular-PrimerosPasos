@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { HijoComponent } from "../hijo/hijo.component";
 import { HermanoComponent } from '../hermano/hermano.component';
 import { ServicioFamiliarService } from '../servicio-familiar.service';
+import { EstiloHermanosDirective } from '../estilo-hermanos.directive';
 
 @Component({
     selector: 'app-padre',
     standalone: true,
     templateUrl: './padre.component.html',
     styleUrl: './padre.component.css',
-    imports: [HijoComponent, HermanoComponent]
+    imports: [HijoComponent, HermanoComponent, EstiloHermanosDirective]
 })
 export class PadreComponent implements OnInit {
   nombre?: string;
@@ -17,7 +18,7 @@ export class PadreComponent implements OnInit {
     private _ServicioFamiliar : ServicioFamiliarService
     ) {}
     ngOnInit(): void {
-      this._ServicioFamiliar.setHermanoGrande('Juan');
+      this._ServicioFamiliar.setHermanoGrande('juan');
       this.nombre = this._ServicioFamiliar.getHermanoGrande();
     }
 

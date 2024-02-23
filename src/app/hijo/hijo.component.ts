@@ -2,11 +2,12 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PadreComponent } from '../padre/padre.component';
 import { FormsModule } from '@angular/forms';
+import { EstiloHermanosDirective } from '../estilo-hermanos.directive';
 
 @Component({
   selector: 'app-hijo',
   standalone: true,
-  imports: [RouterOutlet, PadreComponent, FormsModule
+  imports: [RouterOutlet, PadreComponent, FormsModule, EstiloHermanosDirective
   ],
   templateUrl: './hijo.component.html',
   styleUrl: './hijo.component.css'

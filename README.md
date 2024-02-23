@@ -10,17 +10,23 @@ Para la creacion de un nuevo proyecto desde la consola el siguiente comando `ng 
 ## Build Module
 
 (Spanish)=> nota de leo:
-Con el comando `ng generate module nombre-modulo` o `ng g m nombre-modulo` (se crea una carpeta con los archivos correspondientes al modulo) 
+Con el comando `ng generate module nombre-modulo` o `ng g m nombre-modulo` _(se crea una carpeta con los archivos correspondientes al modulo)_ 
 
 ## Build Component
 
 (Spanish)=> nota de leo:
 Con el comando `ng generate component nombre-componente` o `ng g c nombre-componente` 
-- Se crearan 4 archivos:
+- _Se crearan 4 archivos:_
     el componente => `component.ts`
     el HTML => `component.html`
     el CSS => `component.css`
     el archivo de prueba => `component.spec.ts`
+
+## Build Directiva
+
+(Spanish)=> nota de leo:
+Con el Comando `ng generate directive nombre-directiva` o simplificado `ng g d nombre-directiva`
+_crea tanto un decorador como constructor_
 
 ## Development server
 
