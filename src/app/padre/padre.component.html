@@ -5,13 +5,15 @@
 </app-hijo>
 <p>Contador:  {{ valorContador}}</p>
 
+
 <h3>El mensaje recibido desde el hijo es: {{mensajeRecibido}}</h3>  
 
 <!--<app-hijo [recibeHijo]="mensajePadre"></app-hijo> -->
+<h1 >{{nombre | miPipePersonalizado}}</h1>
 
 <app-hermano/>
 <p>padre</p>
-    <h1 appEstiloHermanos>{{nombre}}</h1>
+    <h2>Fecha de hoy: {{fecha | date: 'dd/MM/YYYY'}}</h2> <!--Pipe -->
     <button type="button" (click)="saludar()">Saludar</button>
     <button type="button" (click)="preguntar()">preguntar por hijo</button>
 

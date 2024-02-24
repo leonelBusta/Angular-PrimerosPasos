@@ -28,6 +28,12 @@ Con el comando `ng generate component nombre-componente` o `ng g c nombre-compon
 Con el Comando `ng generate directive nombre-directiva` o simplificado `ng g d nombre-directiva`
 _crea tanto un decorador como constructor_
 
+## Build PIPES con CLI
+
+(Spanish)=> nota de leo:
+Con el Comando `ng generate pipe nombre-pipe` o simplificado `ng g p nombre-pipe`
+_se crea un decorador_ 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

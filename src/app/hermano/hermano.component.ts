@@ -2,11 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { ServicioFamiliarService } from '../servicio-familiar.service';
 import { PadreComponent } from '../padre/padre.component';
 import { EstiloHermanosDirective } from '../estilo-hermanos.directive';
+import { MiPipePersonalizadoPipe } from '../mi-pipe-personalizado.pipe';
+
 
 @Component({
   selector: 'app-hermano',
   standalone: true,
-  imports: [PadreComponent, EstiloHermanosDirective],
+  imports: [
+    PadreComponent,
+    EstiloHermanosDirective, 
+    MiPipePersonalizadoPipe
+  ],
   templateUrl: './hermano.component.html',
   styleUrl: './hermano.component.css'
 })
