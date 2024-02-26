@@ -1,20 +1,20 @@
+
+<h3>El mensaje recibido desde el hijo es: {{mensajeRecibido}}</h3>  
 <app-hijo 
 (incrementarDesdeHijo)="incrementar()"
 (decrementarDesdeHijo)="decrementar()"
 (mensajeDesdeHijo)="recibirMensaje($event)">
+
 </app-hijo>
+<!--<app-hijo [recibeHijo]="mensajePadre"></app-hijo> -->
+
 <p>Contador:  {{ valorContador}}</p>
 
-
-<h3>El mensaje recibido desde el hijo es: {{mensajeRecibido}}</h3>  
-
-<!--<app-hijo [recibeHijo]="mensajePadre"></app-hijo> -->
 <h1 >{{nombre | miPipePersonalizado}}</h1>
-
 <app-hermano/>
 <p>padre</p>
     <h2>Fecha de hoy: {{fecha | date: 'dd/MM/YYYY'}}</h2> <!--Pipe -->
-    <button type="button" (click)="saludar()">Saludar</button>
-    <button type="button" (click)="preguntar()">preguntar por hijo</button>
+    <button type="button" class="btn btn-info" (click)="saludar()">Saludar</button>
+    <button type="button" class="btn btn-warning" (click)="preguntar()">preguntar por hijo</button>
 
 

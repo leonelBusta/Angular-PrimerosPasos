@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { PadreComponent } from "./padre/padre.component";
 
 @Component({
@@ -7,7 +7,7 @@ import { PadreComponent } from "./padre/padre.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, PadreComponent]
+    imports: [RouterOutlet, PadreComponent, RouterLink]
 })
 
 

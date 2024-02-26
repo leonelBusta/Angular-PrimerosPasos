@@ -1,0 +1,33 @@
+<h1>Programas escolares</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Materia</th>
+        <th scope="col">Carrera</th>
+        <th scope="col">Detalle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Matematicas</td>
+        <td>Ing</td>
+        <button type="button" class="btn btn-outline-primary" [routerLink]="['/productos', 'Matematicas']" routerLinkActive="active">Detalle</button>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Leyes</td>
+        <td>Lic</td>
+        <button type="button" class="btn btn-outline-primary" [routerLink]="['/productos', 'Leyes']" routerLinkActive="active">Detalle</button>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Nutricion</td>
+        <td>Lic</td>
+        <button type="button" class="btn btn-outline-primary" [routerLink]="['/productos', 'Nutricion']" routerLinkActive="active">Detalle</button>
+      </tr>
+    </tbody>
+  </table>
+  
