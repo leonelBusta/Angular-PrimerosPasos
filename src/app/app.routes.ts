@@ -6,9 +6,9 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
-    { path: 'home', component: HomeComponent },
+    { path: '', component: HomeComponent },
     { path: 'productos', component: ProductosComponent },
-    { path: 'productos/:productosId', component: ProductDetailComponent},
+    { path: 'productos/:productId', component: ProductDetailComponent},
     { path: 'contactos', component: ContactosComponent},
     { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

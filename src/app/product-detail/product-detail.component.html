@@ -1,3 +1,12 @@
-<h1>La materia seleccionada es: {{producto}}</h1>
+<br>
+<p>product-detail</p>
+<ng-container *ngIf="!loading">
+    <h1>La materia seleccionada es: {{product?.name}}</h1>
+    <h2 [ngStyle]="{'color': color}">Del grado {{product?.Carrera}}</h2>
+    <h3 *ngIf="product?.descripcion">Descripcion: {{product?.descripcion}}</h3>
 
-<p>product-detail works!</p>
+</ng-container>
+
+<ng-container *ngIf="loading">
+<i> Cargando informacion... </i>
+</ng-container>

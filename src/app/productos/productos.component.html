@@ -10,23 +10,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Matematicas</td>
-        <td>Ing</td>
-        <button type="button" class="btn btn-outline-primary" [routerLink]="['/productos', 'Matematicas']" routerLinkActive="active">Detalle</button>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Leyes</td>
-        <td>Lic</td>
-        <button type="button" class="btn btn-outline-primary" [routerLink]="['/productos', 'Leyes']" routerLinkActive="active">Detalle</button>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Nutricion</td>
-        <td>Lic</td>
-        <button type="button" class="btn btn-outline-primary" [routerLink]="['/productos', 'Nutricion']" routerLinkActive="active">Detalle</button>
+      <tr *ngFor="let product of productsList">
+        <th scope="row">{{product.id}}</th>
+        <td>{{product.name}}</td>
+        <td>{{product.Carrera}}</td>
+        <button type="button" class="btn btn-outline-primary" 
+        [routerLink]="['/productos', product.id]" routerLinkActive="active">Detalle</button>
       </tr>
     </tbody>
   </table>

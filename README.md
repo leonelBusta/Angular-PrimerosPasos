@@ -3,19 +3,20 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
 ## New Project
-
+```
+    Programa de Angular del canal SErgie Code: https://www.youtube.com/watch?v=soInCF7nbDw
+```
 (Spanish)=> nota de leo:
 Para la creacion de un nuevo proyecto desde la consola el siguiente comando `ng new nombre-proyecto` 
 
 ## Build Module
 
-(Spanish)=> nota de leo:
 Con el comando `ng generate module nombre-modulo` o `ng g m nombre-modulo` _(se crea una carpeta con los archivos correspondientes al modulo)_ 
 
 ## Build Component
 
-(Spanish)=> nota de leo:
 Con el comando `ng generate component nombre-componente` o `ng g c nombre-componente` 
+
 - _Se crearan 4 archivos:_
     el componente => `component.ts`
     el HTML => `component.html`
@@ -24,15 +25,23 @@ Con el comando `ng generate component nombre-componente` o `ng g c nombre-compon
 
 ## Build Directiva
 
-(Spanish)=> nota de leo:
 Con el Comando `ng generate directive nombre-directiva` o simplificado `ng g d nombre-directiva`
 _crea tanto un decorador como constructor_
 
 ## Build PIPES con CLI
 
-(Spanish)=> nota de leo:
 Con el Comando `ng generate pipe nombre-pipe` o simplificado `ng g p nombre-pipe`
 _se crea un decorador_ 
+
+## Manejar ESTRUCTURAS DE CONTROL 
+_Principales estructuras_ 
+
+`ngIf`: Permite mostrar u ocultar un elemento en fincion de una expresion booleana.
+`ngFor`: Utilizado para iterear sobre una lista y renderizar elementos repetitivos.
+`ngSwitch`: Muestra un bloque de contenido segubn el valor de una expresion.
+`ngClass`: permite cambiar dinamicamente las clase de un elemento
+`ngStyle`: permite cambiar dinamicamente los estilos de un elemento
+`ngContainer`: Es una estructura de control que no afecta el DOM.
 
 ## Development server
 
